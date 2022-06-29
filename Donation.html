@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"type="text/css" href="myform.css">
+    <h1>Donate Now</h1>
+    <h2>Select an amount you like to donate?</h2>
+    <input type="radio"  name="rupees 1" value="RS-50">
+  <label for="RS-50" id="r1">RS-50</label>
+<input type="radio" name="rupees 2" value="RS-100">
+  <label for="RS-100" id="r2">RS-100</label>
+<input type="radio"  name="rupees 2" value="RS-500">
+  <label for="RS-500" id="r3">RS-500</label>
+</head>
+<body>
+    <div class="me">
+<div class="info">
+    <form action="DONATE.PHP" method="POST">
+        <h3>Your information </h3>
+        <p>FirstName</p>
+<input type="text" name="firstname"placeholder="firstname">
+<p>LastName</p>
+<input type="text" name="lastname"placeholder="lastname">
+<p>Email</p>
+<input type="text"name="email"placeholder="email">
+<p>Password</p>
+<input type="text" name="password"placeholder="password">
+<p>PhoneNumber</p>
+<input type="text"name="phonenumber"placeholder="phonenumber">
+
+
+    </form>  
+</div>
+<div class="form">
+    <h4>Your Payment</h4>
+ <form action="DONATE.PHP" method="POST" >
+ <p>card number</p>
+ <input type="text" name="Cardnumber" placeholder="Enter a card number">
+ <p>CVV</p>
+ <input type="text" name="CVV" placeholder="Enter a cvv">
+ <p> Expiry date</p>
+ <input type="text" name="expiry_date" placeholder="dd/mm/yyyy">
+ <button type="button">Donate</button>
+ </form>
+ </div>   
+ </div>
+ 
+</body>
+</html>
